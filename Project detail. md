@@ -1,0 +1,60 @@
+Bank Account Management System
+
+🔹 Problem Statement
+
+In many small banks and financial institutions, account management is still handled manually or using inefficient systems. This results in errors in transactions, data redundancy, difficulty in maintaining records, and lack of proper security.
+
+The existing system does not provide an efficient way to manage customer information, account balances, deposits, withdrawals, and transaction history in a centralized manner. Therefore, there is a need for a computerized system that ensures accurate, secure, and efficient banking operations.
+
+---
+
+🔹 Project Objectives
+
+- To develop a computerized system for managing bank accounts
+- To store and manage customer details efficiently
+- To perform basic banking operations such as deposit, withdrawal, and balance enquiry
+- To maintain transaction history for each account
+- To reduce human errors and improve accuracy
+- To ensure data security and easy access to information
+- To provide a user-friendly interface for users and administrators
+
+---
+
+🔹 Module List
+
+1. User Registration Module
+
+- Add new customers
+- Store personal and account details
+
+2. Login/Authentication Module
+
+- Secure login for users and admin
+- Password protection
+
+3. Account Management Module
+
+- Create, update, and delete accounts
+- View account details
+
+4. Transaction Module
+
+- Deposit money
+- Withdraw money
+- Fund transfer (optional)
+
+5. Balance Enquiry Module
+
+- Check current account balance
+
+6. Transaction History Module
+
+- View previous transactions
+- Generate reports
+
+7. Admin Module
+
+- Manage users and accounts
+- Monitor all transactions
+
+---
