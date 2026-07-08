@@ -1,52 +1,30 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+function registerUser() {
+    alert("Account Created Successfully!");
+    window.location.href = "login.html";
+    return false;
 }
 
-body{
-    font-family:Arial, sans-serif;
-    background:#f2f2f2;
+function loginUser() {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    if (username === "" || password === "") {
+        alert("Please enter username and password.");
+        return false;
+    }
+
+    alert("Login Successful!");
+    window.location.href = "dashboard.html";
+    return false;
 }
 
-header{
-    background:#0047AB;
-    color:white;
-    padding:20px;
-    text-align:center;
+function transferMoney() {
+    alert("Money Transferred Successfully!");
+    return false;
 }
 
-nav{
-    margin-top:15px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:15px;
-    font-weight:bold;
-}
-
-.hero{
-    width:80%;
-    margin:50px auto;
-    text-align:center;
-    background:white;
-    padding:40px;
-    border-radius:10px;
-    box-shadow:0 0 10px gray;
-}
-
-button{
-    background:#0047AB;
-    color:white;
-    padding:12px 25px;
-    border:none;
-    margin:15px;
-    cursor:pointer;
-    border-radius:5px;
-}
-
-button:hover{
-    background:#003080;
-}
+function logoutUser() {
+    if (confirm("Do you want to logout?")) {
+        window.location.href = "index.html";
+    }
+    }
