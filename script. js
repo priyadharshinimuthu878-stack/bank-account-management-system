@@ -1,87 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+function registerUser() {
+    alert("Account Created Successfully!");
+    window.location.href = "login.html";
+    return false;
+}
 
-<meta charset="UTF-8">
+function loginUser() {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+    if (username === "" || password === "") {
+        alert("Please enter username and password.");
+        return false;
+    }
 
-<title>Open Account</title>
+    alert("Login Successful!");
+    window.location.href = "dashboard.html";
+    return false;
+}
 
-<link rel="stylesheet"
-href="style.css">
+function transferMoney() {
+    alert("Money Transferred Successfully!");
+    return false;
+}
 
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">
-ABC BANK
-</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-
-<a href="login.html">Login</a>
-
-<a href="contact.html">Contact</a>
-
-</nav>
-
-</header>
-
-<div class="form-container">
-
-<h2>Create New Account</h2>
-
-<form onsubmit="return registerUser()">
-
-<input
-type="text"
-id="fullname"
-placeholder="Full Name"
-required>
-
-<input
-type="email"
-id="email"
-placeholder="Email"
-required>
-
-<input
-type="text"
-id="mobile"
-placeholder="Mobile Number"
-required>
-
-<input
-type="text"
-id="address"
-placeholder="Address"
-required>
-
-<input
-type="password"
-id="newpassword"
-placeholder="Create Password"
-required>
-
-<button type="submit">
-
-Create Account
-
-</button>
-
-</form>
-
-</div>
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
+function logoutUser() {
+    if (confirm("Do you want to logout?")) {
+        window.location.href = "index.html";
+    }
+}
